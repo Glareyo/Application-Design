@@ -1,6 +1,14 @@
+/* Credit: W3 School -> Provided documentation on background colors with image alpha changes - https://www.w3schools.com/css/css_background.asp */
+/* Credit: Web Development 2 -> Used old projects to get the parallax image code. */
+/* Image Credit: theimprochannel -> Image Links / Used are from this site => https://theimprochannel.blogspot.com/2022/05/louis-armstrong-and-ella-fitzgerald.html */
+
+
 .container{
     margin: 0 auto;
     text-align: center;
+    max-width: 75%;
+}
+img{
     max-width: 75%;
 }
 #introductory{
@@ -15,13 +23,56 @@
     color: black;
 }
 #subject-title{
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    flex-direction: row;
+
+    height: 10rem;
+    max-width: 100%;
+}
+#subject-title h2{
+    max-width: 50%;
+    width: 100%;
+}
+#subject-title img{
+    max-height: 50%;
+    max-width: 50%;
+    margin: 1.5rem;
 }
 
 section{
     margin: 1.5rem 0;
     border: solid black 0.5rem;
     padding: 1rem;
+
+    max-width: 100%;
 }
+
+section h4{
+    text-decoration: underline;
+    /* Credit: W3 School -> Provided documentation on background colors with image alpha changes - https://www.w3schools.com/css/css_background.asp */
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 100%;
+    padding: 1rem .5rem;
+}
+section ul{
+    /* Credit: W3 School -> Provided documentation on background colors with image alpha changes - https://www.w3schools.com/css/css_background.asp */
+    background-color: rgba(255,255,255,0.9);
+    padding: 1rem .5rem;
+}
+section p{
+    /* Credit: W3 School -> Provided documentation on background colors with image alpha changes - https://www.w3schools.com/css/css_background.asp */
+    background-color: rgba(255,255,255,0.9);
+    padding: 1rem .5rem;
+}
+
+
 
 .lyrical-list{
     margin: 3rem 0;
@@ -30,4 +81,24 @@ section{
     list-style: none;
     text-align: left;
     font-size: 0.8rem;
+}
+
+
+/* Credit: Web Development 2 -> Used old projects to get the parallax image code. */
+.parallax-img{
+}
+#parallax-img-1{
+/* Image Credit: theimprochannel -> Image Links / Used are from this site => https://theimprochannel.blogspot.com/2022/05/louis-armstrong-and-ella-fitzgerald.html */
+    background: url(../images/image-1.jpg) repeat fixed center;
+    background-size: contain;
+}
+#parallax-img-2{
+/* Image Credit: theimprochannel -> Image Links / Used are from this site => https://theimprochannel.blogspot.com/2022/05/louis-armstrong-and-ella-fitzgerald.html */
+    background: url(../images/image-2.jpg) repeat fixed center;
+    background-size: contain;
+}
+#parallax-img-3{
+/* Image Credit: theimprochannel -> Image Links / Used are from this site => https://theimprochannel.blogspot.com/2022/05/louis-armstrong-and-ella-fitzgerald.html */
+    background: url(../images/image-3.jpg) repeat fixed center;
+    background-size: contain;
 }
