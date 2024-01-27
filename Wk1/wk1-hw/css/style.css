@@ -2,6 +2,16 @@
 /* Credit: Web Development 2 -> Used old projects to get the parallax image code. */
 /* Image Credit: theimprochannel -> Image Links / Used are from this site => https://theimprochannel.blogspot.com/2022/05/louis-armstrong-and-ella-fitzgerald.html */
 
+*{
+    background-color: lightgray;
+}
+
+h1{
+    margin: 0;
+}
+h5{
+    margin: 0;
+}
 
 .container{
     margin: 0 auto;
