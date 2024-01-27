@@ -1,9 +1,18 @@
 .container{
     margin: 0 auto;
     text-align: center;
+    max-width: 75%;
 }
 #introductory{
     text-decoration: underline;
+}
+.width-line{
+    width: 100%;
+    height: 1rem;
+    max-width: 100%;
+
+    background-color: black;
+    color: black;
 }
 #subject-title{
 }
