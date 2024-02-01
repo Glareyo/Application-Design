@@ -1,0 +1,36 @@
+.container{
+    margin: 0 auto;
+    max-width: 50%;
+}
+header{
+    text-align: center;
+
+    border: solid black 0.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 50%;
+}
+header h1{
+    font-size: 3rem;
+}
+#bootstrap-link{
+    font-size: 1.5rem;
+    color: black;
+}
+
+section a{
+    font-size: 1.5rem;
+    color: black;
+}
+
+#sample-column-1{
+    background-color: green;
+}
+#sample-column-1 :nth-child(1){
+    background-color: red;
+}
+#sample-column-1 :nth-child(2){
+    background-color: cyan;
+}
+#sample-column-1 :nth-child(3){
+    background-color: orange;
+}
