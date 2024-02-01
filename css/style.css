@@ -17,6 +17,8 @@
 .button{
     padding: 0.5rem 1rem;
 
+    margin: 1rem auto;
+
     background-color: gray;
     border: solid black 0.5rem;
     
