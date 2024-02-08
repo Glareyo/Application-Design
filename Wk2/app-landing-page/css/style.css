@@ -1,54 +1,64 @@
 /* Found through google fonts */
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@88.8&display=swap');
 
-.league-gothic-font{
+.league-gothic-font {
     font-family: "League Gothic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "wdth" 88.8;
-  }
-
-*{
-    margin: 0;
-    background-color: gray;
+        "wdth" 88.8;
 }
-nav{
-    margin: 0rem;
+
+* {
+    margin: 0;
+    background-color: white;
+}
+
+nav {
     max-width: 100%;
     width: 100%;
 }
-nav p{
+nav *{
+    background-color: black;
+}
+
+nav p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.4rem;
 
     /* Find color specifically */
     background-color: maroon;
     color: white;
 
-    padding: 0.7rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem;
 }
-nav ul{
+
+nav ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     list-style: none;
 
-    font-size: 1.5rem;
+    padding: 0.3rem 1rem;
+
+
+    font-size: 0.8rem;
 }
-nav li{
-    margin: 1rem;
+
+nav li {
+    margin-right: 1rem;
     color: white;
 }
-#logo{
-    max-width: 10rem;
-    max-height: 10rem;
-    margin-right: 5%;
+
+#logo {
+    max-width: 5rem;
+    width: 100%;
 }
 
 /* Hero Section */
-.hero-section{
+.hero-section {
     background-image: url(../images/hero-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +70,8 @@ nav li{
     display: flex;
     align-items: flex-end;
 }
-.hero-section h1{
+
+.hero-section h1 {
     color: white;
     max-width: 70%;
 
@@ -71,5 +82,87 @@ nav li{
     font-family: league-gothic;
 
     /* Change Font Family */
-    font-size: 3.54rem;
+    font-size: 2rem;
+}
+
+
+
+/* Classes Section */
+#month-and-buttons-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 3rem;
+}
+
+.month-container{
+
+}
+.month-container h2{
+    font-size: 2.5rem;
+}
+.month-container h3{
+    font-size: 1rem;
+}
+
+.buttons-container {
+
+}
+
+.buttons-container p{
+    border: solid maroon 0.1rem;
+    font-weight: bold;
+    font-size: 0.5rem;
+    padding: 0.8rem 1.5rem;
+
+    margin-top: 0.4rem;
+}
+
+.buttons-container p:nth-child(1) {
+    color: white;
+    background-color: maroon;
+}
+
+.buttons-container p:nth-child(2) {
+    color: maroon;
+    background-color: white;
+}
+
+/* Available Classes */
+
+#available-classes-section{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 0.5rem;
+
+    margin: 0 1rem;
+}
+/* Credit: W3 School */
+/* Provided documentation on CSS Grid */
+#available-classes-section p{
+    font-size: 0.7rem;
+    background-color: cornflowerblue;
+    color: white;
+
+    padding: 0.5rem 0.5rem;
+}
+
+#available-classes-section img{
+    max-width: 100%;
+}
+/* Credit: W3 School */
+/* Provided documentation on CSS Grid */
+#tuesday-p{
+    grid-column: 1 / 2;
+}
+/* Credit: W3 School */
+/* Provided documentation on CSS Grid */
+#wednesday-p{
+    grid-column: 2 / 4;
+}
+/* Credit: W3 School */
+/* Provided documentation on CSS Grid */
+#thursday-p{
+    grid-column: 4 / 7;
 }
