@@ -1,18 +1,16 @@
 /* Found through google fonts */
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@88.8&display=swap');
-
-.league-gothic-font {
-    font-family: "League Gothic", sans-serif;
-    font-optical-sizing: auto;
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Pathway+Gothic+One&display=swap');
+.pathway-gothic one-regular {
+    font-family: "Pathway Gothic One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 88.8;
-}
+  }
+/* Google Fonts */
 
 * {
     margin: 0;
     background-color: white;
+    font-family: "Pathway Gothic One", sans-serif;
 }
 
 nav {
@@ -25,7 +23,7 @@ nav *{
 
 nav p {
     text-align: center;
-    font-size: 0.4rem;
+    font-size: 0.8rem;
 
     /* Find color specifically */
     background-color: maroon;
@@ -44,7 +42,7 @@ nav ul {
     padding: 0.3rem 1rem;
 
 
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 }
 
 nav li {
@@ -53,7 +51,7 @@ nav li {
 }
 
 #logo {
-    max-width: 5rem;
+    max-width: 8rem;
     width: 100%;
 }
 
@@ -95,15 +93,23 @@ nav li {
 
     margin: 3rem;
 }
-
+#blue-box{
+    position: absolute;
+    /* background-color: cornflowerblue;
+    max-width: 40%;
+    width: 100%;
+    max-height: 30%;
+    height: 100%; */
+}
 .month-container{
-
+    display: flex;
+    flex-direction: column;
 }
 .month-container h2{
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 .month-container h3{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .buttons-container {
@@ -111,17 +117,20 @@ nav li {
 }
 
 .buttons-container p{
-    border: solid maroon 0.1rem;
+    border: solid red 0.1rem;
     font-weight: bold;
-    font-size: 0.5rem;
-    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+
+    padding: 1rem 2rem;
+
 
     margin-top: 0.4rem;
 }
 
 .buttons-container p:nth-child(1) {
     color: white;
-    background-color: maroon;
+    background-color: red;
 }
 
 .buttons-container p:nth-child(2) {
@@ -134,18 +143,21 @@ nav li {
 #available-classes-section{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    gap: 0.5rem;
+    gap: 1rem;
 
     margin: 0 1rem;
 }
 /* Credit: W3 School */
 /* Provided documentation on CSS Grid */
-#available-classes-section p{
-    font-size: 0.7rem;
+.dates{
+    font-size: 1rem;
     background-color: cornflowerblue;
     color: white;
 
-    padding: 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem;
+}
+.dates b{
+    background: cornflowerblue;
 }
 
 #available-classes-section img{
@@ -165,4 +177,143 @@ nav li {
 /* Provided documentation on CSS Grid */
 #thursday-p{
     grid-column: 4 / 7;
+}
+.price{
+    font-size: 1.5rem;
+}
+
+#blue-border{
+    background-color: cornflowerblue;
+    padding: 0.5rem;
+}
+
+
+/* Lindy Hop Section */
+#lindy-hop-section{
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#lindy-hop-section iframe{
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    max-width: 30%;
+}
+.info-box h1{
+    font-size: 4rem;
+}
+.info-box p{
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+.info-box a{
+    margin-top: 2rem;
+    
+    text-decoration: none;
+    background-color: red;
+
+    padding: 2rem 0;
+
+
+    font-size: 1.5rem;
+    text-align: center;
+
+
+    color: white;
+}
+
+
+/* Footer */
+footer *{
+    background-color: black;
+    margin: 0;
+}
+footer{
+    max-width: 100%;
+    width: 100%;
+}
+#top-section{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 3rem 2rem;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 30%;
+}
+footer h3{
+    font-size: 2rem;
+    color: white;
+}
+footer a{
+    color: cornflowerblue;
+    font-size: 1.5rem;
+}
+footer p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#facebook-instagram-a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+#facebook-instagram-a p{
+    color: white;
+}
+#email-container{
+
+}
+#email-container input{
+    background-color: white;
+    padding: 1rem;
+}
+#email-container button{
+    color: white;
+    padding: 1rem;
+    background-color: red;
+}
+
+/* Bottom Section of Footer */
+#bottom-section{
+    margin: 0 auto;
+    width: 100%;
+}
+.line{
+    height: 0.1rem;
+    
+    width: 95%;
+
+    margin: 0 auto;
+    background-color: gray;
+
+}
+#bottom-section p, #bottom-section a{
+    font-size: 1rem;
+}
+#bottom-section a{
+    color: cornflowerblue;
+}
+#bottom-section .container{
+    padding: 3rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.links-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
