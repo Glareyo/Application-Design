@@ -21,6 +21,27 @@ nav *{
     background-color: black;
 }
 
+.drop-list{
+    padding: 1rem;
+}
+.drop-list:hover > ul{
+    visibility: visible;
+}
+.drop-list ul{
+    visibility: collapse;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    padding: 0.5rem 0;
+
+}
+.drop-list li{
+    text-align: left;
+}
+
 nav p {
     text-align: center;
     font-size: 0.8rem;
@@ -106,38 +127,43 @@ nav li {
     flex-direction: column;
 }
 .month-container h2{
-    font-size: 4rem;
+    font-size: 6rem;
 }
 .month-container h3{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .buttons-container {
-
+    display: flex;
+    flex-direction: column;
 }
 
-.buttons-container p{
-    border: solid red 0.1rem;
+.buttons-container a{
+    border: solid crimson 0.1rem;
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
+    text-decoration: none;
 
-    padding: 1rem 2rem;
-
-
+    padding: 2rem 4rem;
     margin-top: 0.4rem;
 }
 
-.buttons-container p:nth-child(1) {
+.buttons-container :nth-child(1) {
     color: white;
-    background-color: red;
+    background-color: crimson;
 }
 
-.buttons-container p:nth-child(2) {
-    color: maroon;
+.buttons-container :nth-child(2) {
+    color: crimson;
     background-color: white;
 }
-
+.buttons-container :nth-child(1):hover{
+    background-color: red;
+}
+.buttons-container :nth-child(2):hover{
+    background-color: crimson;
+}
 /* Available Classes */
 
 #available-classes-section{
@@ -183,8 +209,11 @@ nav li {
 }
 
 #blue-border{
-    background-color: cornflowerblue;
-    padding: 0.5rem;
+
+    max-height: 10rem;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    /* padding: 0.5rem; */
 }
 
 
