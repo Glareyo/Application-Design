@@ -7,18 +7,45 @@
   }
 /* Google Fonts */
 
+
+/* Credit: https://redketchup.io/color-picker */
+/* Provided program where colors could be picked from a picture */
+:root{
+    --gray-color: rgb(34, 34, 34);
+    --red-color: rgb(185, 45, 23);
+    --red-color-hover: rgba(185, 45, 23, 0.7);
+    --blue-color: rgb(138, 176, 190);
+    --url-color: rgb(198, 220, 228);
+}
+
+
 * {
     margin: 0;
     background-color: white;
     font-family: "Pathway Gothic One", sans-serif;
 }
 
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 nav {
     max-width: 100%;
     width: 100%;
+    position: fixed;
 }
+
+/* ******************************************** */
+/* ******************************************** */
+/* ******************************************** */
+/* Navigation */
 nav *{
-    background-color: black;
+    background-color: var(--gray-color);
+}
+.navigation-bar{
+    padding: 1rem 2rem;
+    background-color: var(--gray-color);
 }
 
 .drop-list{
@@ -40,6 +67,11 @@ nav *{
 }
 .drop-list li{
     text-align: left;
+    padding: 0 2rem 0 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
 }
 
 nav p {
@@ -47,8 +79,10 @@ nav p {
     font-size: 0.8rem;
 
     /* Find color specifically */
-    background-color: maroon;
+    background-color: var(--red-color);
     color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
 
     padding: 0.5rem;
 }
@@ -75,6 +109,9 @@ nav li {
     max-width: 8rem;
     width: 100%;
 }
+/* ******************************************** */
+/* ******************************************** */
+/* ******************************************** */
 
 /* Hero Section */
 .hero-section {
@@ -84,7 +121,7 @@ nav li {
     background-position: center;
 
     max-width: 100%;
-    height: 75vh;
+    height: 100vh;
 
     display: flex;
     align-items: flex-end;
@@ -92,16 +129,17 @@ nav li {
 
 .hero-section h1 {
     color: white;
-    max-width: 70%;
+    max-width: 50%;
 
-    margin-left: 2rem;
+    margin: 0 0 5% 5%;
 
     background: none;
 
     font-family: league-gothic;
 
     /* Change Font Family */
-    font-size: 2rem;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 5rem;
 }
 
 
@@ -112,25 +150,27 @@ nav li {
     flex-direction: row;
     justify-content: space-between;
 
+    height: 30vh;
+
     margin: 3rem;
-}
-#blue-box{
-    position: absolute;
-    /* background-color: cornflowerblue;
-    max-width: 40%;
-    width: 100%;
-    max-height: 30%;
-    height: 100%; */
+
+    background-image: url(../images/small-box.png);
+    background-size: 50% 60%;
+    background-repeat: no-repeat;
+    background-position: 10% 60%;
 }
 .month-container{
     display: flex;
     flex-direction: column;
+    background-color: transparent;
 }
 .month-container h2{
     font-size: 6rem;
+    background-color: transparent;
 }
 .month-container h3{
     font-size: 4rem;
+    background-color: transparent;
 }
 
 .buttons-container {
@@ -139,30 +179,30 @@ nav li {
 }
 
 .buttons-container a{
-    border: solid crimson 0.1rem;
+    border: solid var(--red-color) 0.1rem;
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
 
-    padding: 2rem 4rem;
+    padding: 2rem 8rem;
     margin-top: 0.4rem;
 }
 
 .buttons-container :nth-child(1) {
     color: white;
-    background-color: crimson;
+    background-color: var(--red-color);
 }
 
 .buttons-container :nth-child(2) {
-    color: crimson;
+    color: var(--red-color);
     background-color: white;
 }
 .buttons-container :nth-child(1):hover{
-    background-color: red;
+    background-color: var(--red-color-hover);
 }
 .buttons-container :nth-child(2):hover{
-    background-color: crimson;
+    background-color: var(--red-color);
 }
 /* Available Classes */
 
@@ -177,13 +217,13 @@ nav li {
 /* Provided documentation on CSS Grid */
 .dates{
     font-size: 1rem;
-    background-color: cornflowerblue;
+    background-color: var(--blue-color);
     color: white;
 
     padding: 1.5rem 0.5rem;
 }
 .dates b{
-    background: cornflowerblue;
+    background: var(--blue-color);
 }
 
 #available-classes-section img{
@@ -206,6 +246,11 @@ nav li {
 }
 .price{
     font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.price :last-child{
+    font-size: 1rem;
 }
 
 #blue-border{
@@ -224,8 +269,11 @@ nav li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-#lindy-hop-section iframe{
+
+    background-image: url(../images/large-box.png);
+    background-repeat: no-repeat;
+    background-size: 60% 90%;
+    background-position: 80% 20%;
 }
 .info-box{
     display: flex;
@@ -233,34 +281,35 @@ nav li {
     align-items: stretch;
 
     max-width: 30%;
+    background-color: transparent;
 }
 .info-box h1{
-    font-size: 4rem;
+    font-size: 7rem;
+    background-color: transparent;
 }
 .info-box p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
     margin: 1rem 0rem;
+    background-color: transparent;
 }
 .info-box a{
     margin-top: 2rem;
-    
     text-decoration: none;
-    background-color: red;
-
+    background-color: var(--red-color);
     padding: 2rem 0;
-
-
     font-size: 1.5rem;
     text-align: center;
-
-
     color: white;
+}
+.info-box a:hover{
+    background-color: var(--red-color-hover);
 }
 
 
 /* Footer */
 footer *{
-    background-color: black;
+    background-color: var(--gray-color);
     margin: 0;
 }
 footer{
@@ -285,7 +334,7 @@ footer h3{
     color: white;
 }
 footer a{
-    color: cornflowerblue;
+    color: var(--url-color);
     font-size: 1.5rem;
 }
 footer p{
@@ -311,7 +360,7 @@ footer p{
 #email-container button{
     color: white;
     padding: 1rem;
-    background-color: red;
+    background-color: var(--red-color);
 }
 
 /* Bottom Section of Footer */

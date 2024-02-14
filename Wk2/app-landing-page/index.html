@@ -1,3 +1,15 @@
+<!-- /* Credit: https://redketchup.io/color-picker */ -->
+<!--/* Provided program where colors could be picked from a picture */ -->
+
+<!-- Cameron Cintron -->
+<!-- Provided course materials for web development -->
+
+<!-- Credit: W3 School - https://www.w3schools.com/tags/tag_iframe.asp -->
+<!-- Provided documentation on IFrames -->
+
+<!-- Credit: W3 School  -->
+<!-- Provided documentation on CSS Grid -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,42 +23,56 @@
 </head>
 
 <body>
+    <nav>
+        <p>All Classes will be held at our new location: 4011 N Ravenswood Ave Suite 101!</p>
+        <b>
+            <ul class="navigation-bar">
+                <li><img src="images/logo.png" alt="" id="logo"></li>
+                <li class="drop-list">EVENTS
+                    <ul>
+                        <li><a href="">DANCES AND WORKSHOPS</a></li>
+                        <li><a href="">DANCE FAQS</a></li>
+                        <li><a href="">EVENT POLICIES</a></li>
+                    </ul>
+                </li>
+                <li class="drop-list">SESSIONS
+                    <ul>
+                        <li><a href="">GETTING STARTED</a></li>
+                        <li><a href="">CURRENT SESSION</a></li>
+                        <li><a href="">CLASS SEQUENCE</a></li>
+                        <li><a href="">CLASS FAQS</a></li>
+                        <li><a href="">SCHOLARSHIPS</a></li>
+                    </ul>
+                </li>
+                <li class="drop-list">ABOUT
+                    <ul>
+                        <li><a href="">OUR MISSION</a></li>
+                        <li><a href="">OUR HISTROY</a></li>
+                        <li><a href="">MEET THE TEAM</a></li>
+                        <li><a href="">GET INVOLVED</a></li>
+                        <li><a href="">NEWS AND UPDATES</a></li>
+                        <li><a href="">PRIVATE LESSONS</a></li>
+                    </ul>
+                </li>
+                <li class="drop-list">SHOP
+                    <ul>
+                        <li><a href="">CLASSES AND DANCES</a></li>
+                        <li><a href="">MERCH</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </b>
+    </nav>
+    <section class="hero-section">
+        <h1 class="league-gothic-font">
+            CHICAGO'S NONPROFIT SUPPORTING SWING, LINDY HOP, AND JAZZ ERA DANCES.
+        </h1>
+    </section>
     <div class="container">
-        <nav>
-            <p>All Classes will be held at our new location: 4011 N Ravenswood Ave Suite 101!</p>
-            <b>
-                <ul>
-                    <li><img src="images/logo.png" alt="" id="logo"></li>
-                    <li class="drop-list">Events
-                        <ul>
-                            <li>DANCES AND WORKSHOPS</li>
-                            <li>DANCE FAQS</li>
-                            <li>EVENT POLICIES</li>
-                        </ul>
-                    </li>
-                    <li class="drop-list">Sessions
-                        <ul>
-                            <li><a href="">GETTING STARTED</a></li>
-                            <li><a href="">CURRENT SESSION</a></li>
-                            <li>CLASS SEQUENCE</li>
-                            <li>CLASS FAQS</li>
-                            <li>SCHOLARSHIPS</li>
-                        </ul>
-                    </li>
-                    <li>About</li>
-                    <li>Shop</li>
-                    <li>Contact</li>
-                </ul>
-            </b>
-        </nav>
-        <section class="hero-section">
-            <h1 class="league-gothic-font">
-                CHICAGO'S NONPROFIT SUPPORTING SWING, LINDY HOP, AND JAZZ ERA DANCES.
-            </h1>
-        </section>
+
         <br>
         <section id="month-and-buttons-section">
-            <div id="blue-box"></div>
             <div class="month-container">
                 <h2>FEBRAURY 2024</h2>
                 <h3>4-WEEK SESSIONS</h3>
@@ -61,44 +87,45 @@
             <p class="dates" id="tuesday-p"><b>Tuesday</b> Feb 6,13,20,27</p>
             <p class="dates" id="wednesday-p"><b>Wednesday</b> Feb 7,14,21,28</p>
             <p class="dates" id="thursday-p"><b>Thursday</b> Feb 8,15,22,29</p>
-            <img src="images/201.png" alt="">
-            <img src="images/101.png" alt="">
-            <img src="images/401.png" alt="">
-            <img src="images/301.png" alt="">
-            <img src="images/201.png" alt="">
-            <img src="images/101.png" alt="">
-            <div class="price">
+            <a href=""><img src="images/201.png" alt=""></a>
+            <a href=""><img src="images/101.png" alt=""></a>
+            <a href=""><img src="images/401.png" alt=""></a>
+            <a href=""><img src="images/301.png" alt=""></a>
+            <a href=""><img src="images/201.png" alt=""></a>
+            <a href=""><img src="images/101.png" alt=""></a>
+            <a href="" class="price">
                 <p>201: Tuck Turns</p>
                 <p>$65.00</p>
-            </div>
-            <div class="price">
+            </a>
+            <a href="" class="price">
                 <p>101: Intro to Swing</p>
                 <p>$65.00</p>
-            </div>
-            <div class="price">
+            </a>
+            <a href="" class="price">
                 <p>401: Lindy Hop</p>
                 <p>$65.00</p>
-            </div>
-            <div class="price">
+            </a>
+            <a href="" class="price">
                 <p>301: Intro to Lindy Hop</p>
                 <p>$65.00</p>
-            </div>
-            <div class="price">
+            </a>
+            <a href="" class="price">
                 <p>201: Tuck Turns</p>
                 <p>$65.00</p>
-            </div>
-            <div class="price">
+            </a>
+            <a href="" class="price">
                 <p>101: Intro to Swing</p>
                 <p>$65.00</p>
-            </div>
+            </a>
         </section>
 
         <br>
         <img src="images/line.png" alt="" id="blue-border">
-        <!-- <div id="blue-border"></div> -->
         <br>
 
         <section id="lindy-hop-section">
+            <!-- Credit: W3 School - https://www.w3schools.com/tags/tag_iframe.asp -->
+            <!-- Provided documentation on IFrames -->
             <iframe width="800" height="400" src="https://youtu.be/YFpU5ypLrKQ"></iframe>
             <div class="info-box">
                 <h1>WHAT IS LINDY HOP?</h1>
@@ -108,7 +135,7 @@
                 <p>Lindy Hop evolved from existing swing dances including Charleston, Breakaway, tap and jazz and
                     innovated captivating air steps. Lindy Hop soon began being featured in shows at the famous Cotton
                     Club, world wide tours, and films like A Day at the Races and Hellzapoppin’.</p>
-                <a href="">Our Mission</a>
+                <a href="" class="red-button">Our Mission</a>
             </div>
 
         </section>
