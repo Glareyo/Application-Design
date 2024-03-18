@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InheritanceHW_2.Classes.Characters_Classes
+{
+    public class Villager : Trader
+    {
+
+        public override void Dead()
+        {
+            //If killed by zombie
+            //Zombify();
+        }
+        public void Zombify()
+        {
+
+        }
+    }
+}

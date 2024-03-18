@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\InheritanceHW",
+    "\\InheritanceHW\\Classes",
+    "\\InheritanceHW\\Classes\\Characters Classes"
   ],
+  "SelectedNode": "\\InheritanceHW\\Classes\\Characters Classes\\ICreature.cs",
   "PreviewInSolutionExplorer": false
 }
